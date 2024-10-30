@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="307.0" style="-fx-background-color: #ffc523;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cronometro.IntroController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="22.0" prefHeight="70.0" prefWidth="268.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-color: #FFFFFF00;">
+         <children>
+            <Label layoutX="14.0" layoutY="23.0" text="Minuto final del tiempo:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Minutos" layoutX="190.0" layoutY="20.0" prefHeight="27.0" prefWidth="62.0" promptText="30" style="-fx-background-color: #23d4b9; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #00a86b;" />
+            <Label layoutX="13.0" layoutY="-15.0" style="-fx-background-color: #ffc523;" text="Cronómetro:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="110.0" prefHeight="190.0" prefWidth="268.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-color: #FFFFFF00;">
+         <children>
+            <Label layoutX="13.0" layoutY="-15.0" style="-fx-background-color: #ffc523;" text="Marcador:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="22.0" text="Teclas asignables:">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="13.0" layoutY="42.0" prefHeight="1.0" prefWidth="243.0" style="-fx-border-color: black;" />
+            <Label layoutX="46.0" layoutY="57.0" text="Sumar gol local:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="89.0" text="Restar gol local:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="121.0" text="Sumar gol visitante:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="153.0" text="Restar gol visitante:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="SumLocal" alignment="CENTER" layoutX="170.0" layoutY="54.0" prefHeight="25.0" prefWidth="62.0" promptText="W" style="-fx-background-color: #f25600; -fx-border-color: #cc2600; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="ResLocal" alignment="CENTER" layoutX="170.0" layoutY="86.0" prefHeight="25.0" prefWidth="62.0" promptText="S" style="-fx-background-color: #f25600; -fx-border-color: #cc2600; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="SumVisit" alignment="CENTER" layoutX="170.0" layoutY="118.0" prefHeight="25.0" prefWidth="62.0" promptText="T" style="-fx-background-color: #00ffff; -fx-border-color: #2196f3; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ResVisit" alignment="CENTER" layoutX="170.0" layoutY="150.0" prefHeight="25.0" prefWidth="62.0" promptText="G" style="-fx-background-color: #00ffff; -fx-border-color: #2196f3; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="300.0" prefHeight="70.0" prefWidth="312.0" style="-fx-background-color: #FFFFFF00;">
+         <children>
+            <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#OnCancelarClic" style="-fx-background-color: #ff3816; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: #f80000;" text="CANCELAR">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="181.0" layoutY="12.0" mnemonicParsing="false" onAction="#OnAceptarClic" style="-fx-background-color: #4ea93b; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: #005c00;" text="ACEPTAR">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
