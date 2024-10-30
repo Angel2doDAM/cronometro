@@ -19,7 +19,7 @@ public class HelloApplication extends Application {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("intro.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
 
-            stage.setTitle("Mi Aplicación");  // Título de la ventana
+            stage.setTitle("Cronómetro CBVdC");  // Título de la ventana
             stage.setScene(scene);            // Establece la escena
             stage.show();                     // Muestra la ventana
         } catch (IOException e) {

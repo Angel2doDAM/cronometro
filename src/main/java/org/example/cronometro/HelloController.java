@@ -29,10 +29,10 @@ public class HelloController implements Initializable {
     private Label Crono;
 
     @FXML
-    private TextField MarcadorLocal;
+    private Label MarcadorLocal;
 
     @FXML
-    private TextField MarcadorVisitante;
+    private Label MarcadorVisitante;
 
     @FXML
     private Label keyResLoc;
@@ -84,27 +84,6 @@ public class HelloController implements Initializable {
             golesVisitante--;
             guardarMarcadorEnArchivo(archivoVisitante, golesVisitante);
         }
-
-        /*switch (teclaPulsada) {
-            case "W":
-                golesLocal++;
-                guardarMarcadorEnArchivo(archivoLocal, golesLocal);
-                break;
-            case "S":
-                golesLocal--;
-                guardarMarcadorEnArchivo(archivoLocal, golesLocal);
-                break;
-            case "T":
-                golesVisitante++;
-                guardarMarcadorEnArchivo(archivoVisitante, golesVisitante);
-                break;
-            case "G":
-                golesVisitante--;
-                guardarMarcadorEnArchivo(archivoVisitante, golesVisitante);
-                break;
-            default:
-                return;
-        }*/
 
         MarcadorLocal.setText(String.valueOf(golesLocal));
         MarcadorVisitante.setText(String.valueOf(golesVisitante));
